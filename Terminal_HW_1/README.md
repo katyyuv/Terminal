@@ -6,4 +6,6 @@
 ### 2. Create a folder
 `mkdir dir`
 
+### 3. Go to the folder
+`cd dir`
 
