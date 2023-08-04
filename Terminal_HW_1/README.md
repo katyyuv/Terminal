@@ -69,14 +69,58 @@ Click on the `[Esc]` button and enter `:wq`
 ### 16. View content in real-time
 `grep -i how dir_1/2.txt`
 
+- Case-sensitive word search in a file `grep word 2.txt`
+- with `-i` case insensitive word search in a file
+- with `-v` displays lines that do not contain queries
+- with `-c` displays lines containing the search query
+  
 ### 17. Display the first few lines from a txt file
 `head -n 2 dir_1/2.txt`
 
+- Default output of the first 10 lines `head -n dir_1/2.txt`
+
 ### 18. Display the last few lines from a txt file
 `tail -n 2 dir_1/2.txt`
+
+- Default output of the last 10 lines `tail -f dir_1/2.txt`
 
 ### 19. View the contents of a long file
 `less dir_1/2.txt`
 
 ### 20. Display date and time
 `date`
+
+## Task *
+### 1. Send http request http://162.55.220.72:5006/terminal-hw-request to server
+
+Request:
+
+`curl http://162.55.220.72:5006/terminal-hw-request`
+
+Response:
+```
+  "Intro": "Hello!! This is your first response from the server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+```
+
+Request:
+
+`curl 'http://162.55.220.72:5006/get_method?name=Kate&age=21'`
+
+Response:
+```
+[
+  "Kate",
+  "21"
+]
+```
+
+### 2. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13
+
