@@ -124,3 +124,24 @@ Response:
 
 ### 2. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13
 
+- Create a file script.sh and enter in it the items that should be automatically
+
+```
+$ cat > script.sh
+#!/bin/bash
+cd dir
+mkdir dir_10
+cd dir_10
+mkdir dir_10_1 dir_10_2 dir_10_3
+cd dir_10_2
+touch 1.txt 2.txt 3.txt 1.json 2.json
+mkdir dir_10_2_1 dir_10_2_2 dir_10_2_3
+ls -la
+mv dir_10_2/1.txt dir_10_2/1.json dir_10_2_1
+```
+
+-  Make script executable
+`chmod +x script.txt`
+
+- Run a script
+`bash script.sh`
