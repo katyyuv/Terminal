@@ -119,3 +119,58 @@ cat > tF_5.txt
 
 ### 20. Clear the file tf_4.txt of its contents without deleting the file itself
 `cat > inner_dir_1/tf_4.txt` and press `Ctrl + C`
+
+### 21. Find the path to files that have "tf" in the name
+`find . -name "*tf*"`
+
+### 22. Find the path to files that have "tf" in the name and letters in any case.
+`find . -iname "*tf*"`
+
+### 23. Find lines in files with the letter combination "sec" in the current folder
+`grep sec *`
+
+### 24. Find lines in files where there is a combination of letters "sec" in any case in the current folder
+`grep -i sec *`
+
+### 25. Find lines in files with only the letter combination "sec" in the current folder
+`grep -w sec *`
+
+### 26. Find lines in files with only the combination of letters "sec" in any case in the current folder
+`grep -wi sec *`
+
+### 27. Find lines in files with the letter combination "second" in the current folder
+`grep second *`
+
+### 28. Find lines in files where there is a combination of letters "second" in any case in the current folder
+`grep -i second *`
+
+### 29. Find lines in files with the letter combination "second" in all folders below the folder level
+`grep -r second`
+
+### 30. Find only the path and file name with "second" in the lines in the current folder
+`grep -sl second *`
+
+### 31. Find all lines in all files where there is no "second" combination
+`grep -rv second`
+
+### 32. Find only the name and path to files where there is no "second" combination
+`grep -rL second`
+
+### 33. Display the last 4 lines of any text file in the terminal
+`tail -n 4 tf_2.txt`
+
+### 34. Display the first 4 lines of any text file in the terminal
+`head -n 4 tf_2.txt`
+
+### 35. One line command. Create a folder and create a text file with the contents
+```
+mkdir inner_dir_2 && cat > tf_6.txt
+1
+2
+3
+4
+5
+6
+```
+
+### 36. 
