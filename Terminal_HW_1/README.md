@@ -67,7 +67,7 @@ Click on the `[Esc]` button and enter `:wq`
 `find . -name 2.txt`
 
 ### 16. View content in real-time
-`grep -i how dir_1/2.txt`
+`tail -f dir_1/2.txt`
 
 - Case-sensitive word search in a file `grep word 2.txt`
 - with `-i` case insensitive word search in a file
