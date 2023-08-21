@@ -154,7 +154,7 @@ cat > tF_5.txt
 `grep -rv second`
 
 ### 32. Find only the name and path to files where there is no "second" combination
-`grep -rL second`
+`grep -rlv second`
 
 ### 33. Display the last 4 lines of any text file in the terminal
 `tail -n 4 tf_2.txt`
