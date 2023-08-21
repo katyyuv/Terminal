@@ -174,16 +174,16 @@ mkdir inner_dir_2 && cat > tf_6.txt
 ```
 
 ### 36. One line command. Move text files with the word "sec" in their contents to any single folder
-`grep -rl 'sec' | xargs-I{} mv {} inner_dir_2`
+`grep -rlw "sec" | xargs mv -t inner_dir_2`
 
 ### 37. One line command. Copy text files with the word "sec" in their contents to any one folder
-`grep -rl 'sec' | xargs -I{} cp {} inner_dir_1`
+`grep -rlw "sec" | xargs cp -t inner_dir_1`
 
 ### 38. One line command. Find all lines with "sec" in all text files, copy and paste these lines into one new created text file
 `grep -hr 'sec' | cat > tf_6.txt`
 
 ### 39. One line command. Delete text files with the word "sec" in their contents
-`grep -rl "sec" | xargs -I{} rm {}`
+`grep -rl sec | xargs rm`
 
 ### 40. Just display the line "Good job!!!" in the terminal
 `echo Good job!!`
