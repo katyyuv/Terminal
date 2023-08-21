@@ -68,11 +68,6 @@ Click on the `[Esc]` button and enter `:wq`
 
 ### 16. View content in real-time
 `tail -f dir_1/2.txt`
-
-- Case-sensitive word search in a file `grep word 2.txt`
-- with `-i` case insensitive word search in a file
-- with `-v` displays lines that do not contain queries
-- with `-c` displays lines containing the search query
   
 ### 17. Display the first few lines from a txt file
 `head -n 2 dir_1/2.txt`
