@@ -72,12 +72,12 @@ Click on the `[Esc]` button and enter `:wq`
 ### 17. Display the first few lines from a txt file
 `head -n 2 dir_1/2.txt`
 
-- Default output of the first 10 lines `head -n dir_1/2.txt`
+- Default output of the first 10 lines `head dir_1/2.txt`
 
 ### 18. Display the last few lines from a txt file
 `tail -n 2 dir_1/2.txt`
 
-- Default output of the last 10 lines `tail -f dir_1/2.txt`
+- Default output of the last 10 lines `tail dir_1/2.txt`
 
 ### 19. View the contents of a long file
 `less dir_1/2.txt`
